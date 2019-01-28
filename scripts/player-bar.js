@@ -38,4 +38,8 @@
     $('.total-time').text(player.prettyTime(duration))
   }, 1000);
 
+  $('#volume-control input').on('input', function (event) {
+    player.setVolume(event.target.value);
+  });
+
   }
